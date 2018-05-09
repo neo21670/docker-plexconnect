@@ -1,7 +1,7 @@
 FROM alpine:3.7
 LABEL maintainer="Alex Varju"
 
-RUN apk add --no-cache git python sed
+RUN apk add --no-cache git python sed openssl
 
 RUN mkdir /opt && cd /opt && git clone https://github.com/iBaa/PlexConnect.git
 
